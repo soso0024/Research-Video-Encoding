@@ -70,7 +70,7 @@
     ```
     subprocessモジュールは、Pythonから外部プログラムを実行するためのモジュールです。
     timeモジュールは、時間に関する処理を行うためのモジュールです。
-    <br />
+    \n
     ```
     input_file = "/usr/local/bin/video_name"
     output_file = "file_name.mp4"
