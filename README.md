@@ -69,8 +69,8 @@
     import subprocess
     import time
     ```
-    subprocessモジュールは、Pythonから外部プログラムを実行するためのモジュールです。
-    timeモジュールは、時間に関する処理を行うためのモジュールです。
+    - subprocessモジュールは、Pythonから外部プログラムを実行するためのモジュールです。
+    - timeモジュールは、時間に関する処理を行うためのモジュールです。
     <br>
     ```
     input_file = "/usr/local/bin/video_name"
@@ -78,38 +78,38 @@
     resolution = "1920x1080"
     codec = "libx264"
     ```
-    input_fileは、エンコードしたい動画のパスを指定します。
-    output_fileは、エンコード後の動画のファイル名を指定します。
-    resolutionは、エンコード後の動画の解像度を指定します。
-    codecは、エンコード後の動画のコーデックを指定します。
+    - input_fileは、エンコードしたい動画のパスを指定します。
+    - output_fileは、エンコード後の動画のファイル名を指定します。
+    - resolutionは、エンコード後の動画の解像度を指定します。
+    - codecは、エンコード後の動画のコーデックを指定します。
     <br>
     ```
     start_time = time.time()
     ```
-    time.time()は、プログラム実行からの経過秒数を返します。
-    start_timeは、エンコード前の時間を取得します。
+    - time.time()は、プログラム実行からの経過秒数を返します。
+    - start_timeは、エンコード前の時間を取得します。
     <br>
     ```
     ffmpeg_cmd = f"/usr/local/bin/ffmpeg-6.0-amd64-static/./ffmpeg -i {input_file} -s {resolution} -c:v {codec} {output_file}"
     ```
-    ffmpeg_cmdは、FFmpegコマンドを作成します。
+    - ffmpeg_cmdは、FFmpegコマンドを作成します。
     <br>
     ```
     subprocess.call(ffmpeg_cmd, shell=True)
     ```
-    subprocess.call()は、引数に指定したコマンドを実行します。
+    - subprocess.call()は、引数に指定したコマンドを実行します。
     <br>
     ```
     end_time = time.time()
     elapsed_time = end_time - start_time
     ```
-    end_timeは、エンコード後の時間を取得します。
-    elapsed_timeは、エンコード時間を計算します。
+    - end_timeは、エンコード後の時間を取得します。
+    - elapsed_timeは、エンコード時間を計算します。
     <br>
     ```
     print(f"エンコード時間: {elapsed_time}秒")
     ```
-    print()は、引数に指定した文字列を出力します。
+    - print()は、引数に指定した文字列を出力します。
 
 ## EC2 Spot Instance Encoding
 #### まだやれてない😭😭😭
