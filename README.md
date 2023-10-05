@@ -3,8 +3,6 @@
 ## 目次<!-- omit in toc -->
 - [EC2 On Demand Instance Encoding](#ec2-on-demand-instance-encoding)
     - [aws credentialsの設定](#aws-credentialsの設定)
-- [EC2 Spot Instance Encoding](#ec2-spot-instance-encoding)
-    - [まだやれてない😭😭😭](#まだやれてない)
 - [参考資料](#参考資料)
 
 ## EC2 On Demand Instance Encoding
@@ -104,9 +102,6 @@
     print(f"エンコード時間: {elapsed_time}秒")
     ```
     - print()は、引数に指定した文字列を出力します。
-
-## EC2 Spot Instance Encoding
-#### まだやれてない😭😭😭
 
 ## 参考資料
 - [EC2内にFFmpegをインストールしてAWS MediaPackageのエンドポイントからMP4ファイルを作成する方法](https://www.monster-dive.com/blog/web_system/20210209_002010.php)
