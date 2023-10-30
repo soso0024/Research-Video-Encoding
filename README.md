@@ -3,6 +3,7 @@
 > 📚 EC2 On Demand Instance Encoding with Python and FFmpeg.
 
 [![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws)](https://aws.amazon.com/)
 [![FFmpeg](https://img.shields.io/badge/-FFmpeg-0076A8?style=flat-square&logo=ffmpeg)](https://ffmpeg.org/)
 
