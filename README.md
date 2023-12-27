@@ -1,19 +1,19 @@
-# 🎥 python-Video-Encoding<!-- omit in toc -->
+# python-Video-Encoding<!-- omit in toc -->
 
-> 📚 EC2 On Demand Instance Encoding with Python and FFmpeg.
+> EC2 On Demand Instance Encoding with Python and FFmpeg.
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws)](https://aws.amazon.com/)
 [![FFmpeg](https://img.shields.io/badge/-FFmpeg-0076A8?style=flat-square&logo=ffmpeg)](https://ffmpeg.org/)
 
-## 📖 目次<!-- omit in toc -->
-- [🚀 EC2 On Demand Instance Encoding](#-ec2-on-demand-instance-encoding)
-  - [🛠 AWS Credentialsの設定](#-aws-credentialsの設定)
-- [📚 参考資料](#-参考資料)
+## 目次<!-- omit in toc -->
+- [EC2 On Demand Instance Encoding](#-ec2-on-demand-instance-encoding)
+  - [AWS Credentialsの設定](#-aws-credentialsの設定)
+- [参考資料](#-参考資料)
 
-## 🚀 EC2 On Demand Instance Encoding
+## EC2 On Demand Instance Encoding
 
-### 🛠 AWS Credentialsの設定
+### AWS Credentialsの設定
 ```bash
 aws configure
 ```
@@ -26,7 +26,7 @@ Default output format [None]: json
 
 1. オンデマンドインスタンスを作成する
 2. SSH接続する
-3. 📦 FFmpegのインストール (EC2)
+3. FFmpegのインストール (EC2)
    ```bash
    sudo su - //change root user
 
@@ -42,16 +42,16 @@ Default output format [None]: json
 
     ./ffmpeg -version //解凍後のディレクトリファイルでしか./ffmpegコマンドは使えない
     ```
-4. 📤 S3に動画をアップロード
+4. S3に動画をアップロード
    ```bash
    aws s3 cp [ファイル名] s3://[バケット名]
    ```
-5. 📥 S3から動画をダウンロード
+5. S3から動画をダウンロード
    ```bash
    aws s3 cp s3://[バケット名]/[ファイル名] [保存先]
    ```
    [aws credentialsの設定が必要](#-aws-credentialsの設定)
-6. 🎬 エンコード
+6. エンコード
     ```python
     import subprocess
     import time
@@ -115,5 +115,5 @@ Default output format [None]: json
     ```
     - print()は、引数に指定した文字列を出力します。
 
-## 📚 参考資料
+## 参考資料
 - [EC2内にFFmpegをインストールしてAWS MediaPackageのエンドポイントからMP4ファイルを作成する方法](https://www.monster-dive.com/blog/web_system/20210209_002010.php)
