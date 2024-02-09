@@ -6,11 +6,10 @@ from datetime import datetime
 session = boto3.Session(profile_name='default')
 client = session.client('ec2', region_name='us-east-1')
 
-# Using datetime objects for start and end times
+# Set start and end times
 start_time = datetime(2023, 7, 9)
 end_time = datetime(2023, 12, 31)
 
-# Ensure the end time is after the start time
 response = client.describe_spot_price_history(
     StartTime=start_time,
     EndTime=end_time,
@@ -22,8 +21,8 @@ response = client.describe_spot_price_history(
     ]
 )
 
-# Now, we will write this response into a CSV file
-csv_file_path = "./data/spot_price_history.csv"  # Path to save the CSV file
+# write this response into a CSV file
+csv_file_path = "../data/spot_price_history.csv"  # Path to save the CSV file
 
 # Open the CSV file for writing
 with open(csv_file_path, mode='w', newline='') as file:
@@ -40,4 +39,4 @@ with open(csv_file_path, mode='w', newline='') as file:
                          item['ProductDescription'], item['SpotPrice'],
                          item['AvailabilityZone']])
 
-print(f"Spot price history has been written to {csv_file_path}")
+print(f"Fin!")
