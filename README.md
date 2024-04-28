@@ -74,7 +74,7 @@ Default output format [None]: json
 
     print(f"エンコード時間: {elapsed_time}秒")
     ```
-    #### コードの説明
+    #### エンコードプログラムの説明
     ```python
     import subprocess
     import time
