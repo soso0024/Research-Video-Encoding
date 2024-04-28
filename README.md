@@ -74,7 +74,7 @@ Default output format [None]: json
 
     print(f"エンコード時間: {elapsed_time}秒")
     ```
-    #### エンコードプログラムの説明
+    #### <a href="https://github.com/soso0024/python-Video-Encoding/tree/main/src/encode">エンコードプログラム</a>の説明
     ```python
     import subprocess
     import time
