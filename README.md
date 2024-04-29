@@ -29,19 +29,19 @@ Default output format [None]: json
 2. SSH接続する
 3. FFmpegのインストール (EC2)
    ```bash
-   sudo su - //change root user
+   sudo su - # change root user
 
-    cd /usr/local/bin //move dir
+    cd /usr/local/bin   # move dir
 
-    mkdir ffmpeg //create dir named ffmpeg
+    mkdir ffmpeg   # create dir named ffmpeg
 
-    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz //download ffmpeg file
+    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz   # download ffmpeg file
 
-    tar -xf ffmpeg-release-amd64-static.tar.xz //unpacking download file
+    tar -xf ffmpeg-release-amd64-static.tar.xz # unpacking download file
 
-    cd ffmpeg-6.0-amd64-static //mov unpacked file
+    cd ffmpeg-6.0-amd64-static   # mov unpacked file
 
-    ./ffmpeg -version //解凍後のディレクトリファイルでしか./ffmpegコマンドは使えない
+    ./ffmpeg -version   # 解凍後のディレクトリファイルでしか./ffmpegコマンドは使えない
     ```
 4. S3に動画をアップロード
    ```bash
