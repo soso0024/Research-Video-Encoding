@@ -9,7 +9,8 @@
 ## 目次<!-- omit in toc -->
 - [EC2 On Demand Instance Encoding](#-ec2-on-demand-instance-encoding)
   - [AWS Credentialsの設定](#-aws-credentialsの設定)
-- [エンコードプログラムの説明](#-エンコードプログラムの説明)
+- [エンコードプログラム](#-エンコードプログラム)
+- [main.py](#-main.py)
 - [参考資料](#-参考資料)
 
 ## EC2 On Demand Instance Encoding
@@ -75,7 +76,7 @@ Default output format [None]: json
 
     print(f"エンコード時間: {elapsed_time}秒")
     ```
-    ## <a href="https://github.com/soso0024/python-Video-Encoding/tree/main/src/encode">エンコードプログラム</a>の説明
+## <a href="https://github.com/soso0024/python-Video-Encoding/tree/main/src/encode">エンコードプログラム</a>
     ```python
     import subprocess
     import time
@@ -115,6 +116,9 @@ Default output format [None]: json
     print(f"エンコード時間: {elapsed_time}秒")
     ```
     - print()は、引数に指定した文字列を出力します。
+
+## <a href="https://github.com/soso0024/python-Video-Encoding/blob/main/src/main.py"> main.py </a>
+AWSのAPIを叩いて，スポットインスタンスの価格履歴を取得するためのプログラムです。
 
 ## 参考資料
 - [EC2内にFFmpegをインストールしてAWS MediaPackageのエンドポイントからMP4ファイルを作成する方法](https://www.monster-dive.com/blog/web_system/20210209_002010.php)
