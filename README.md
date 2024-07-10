@@ -1,4 +1,4 @@
-# python-Video-Encoding<!-- omit in toc -->
+# python-video-encoding<!-- omit in toc -->
 
 > EC2 On Demand Instance Encoding with Python and FFmpeg.
 
